@@ -1,2 +1,2 @@
 # lambdacop
-Automating EC2 Security Groups with Lambda, API Gateway and S3
+Automating SSH security on AWS EC2 Security Groups with Lambda. 
