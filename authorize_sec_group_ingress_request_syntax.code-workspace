@@ -1,0 +1,38 @@
+response = client.authorize_security_group_ingress(
+    CidrIp='myip',
+    FromPort=22,
+    GroupId='string',
+    IpPermissions=[
+        {
+            'FromPort': 22,
+            'IpProtocol': 'tcp',
+            'IpRanges': [
+                {
+                    'CidrIp': 'string',
+                    'Description': 'lambdacop'
+                },
+            ],
+            'PrefixListIds': [
+                {
+                    'Description': 'lambdacop',
+                    'PrefixListId': 'string'
+                },
+            ],
+            'ToPort': 22,
+            'UserIdGroupPairs': [
+                {
+                    'Description': 'lambdacop',
+                    'GroupId': 'string',
+                    'GroupName': 'string',
+                    'PeeringStatus': 'string',
+                    'UserId': 'string',
+                    'VpcId': 'string',
+                    'VpcPeeringConnectionId': 'string'
+                },
+            ]
+        },
+    ],
+    IpProtocol='tcp',
+    ToPort=22,
+    DryRun=False
+)
